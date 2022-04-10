@@ -131,9 +131,10 @@ Determine if any GPUs are available and set hyperparameters
 """
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 net = DC_IGN().to(device)
-num_epochs = 1
 learning_rate = 5e-4
-optimizer = torch.optim.Adam(net.parameters(), lr=learning_rate)
+momentum = 0.1
+weight_decay = 0.01
+optimizer = torch.optim.RMSprop(net.parameters(), lr=learning_rate, momentum=momentum, weight_decay=weight_decay)
 
 
 
@@ -193,7 +194,7 @@ for epoch in range(num_epochs):
             # The loss is the BCE loss combined with the KL divergence to ensure the distribution is learnt
             kl_divergence = -0.5 * torch.sum(1 + logVar - mu.pow(2) - logVar.exp())
             print(f'kl divergence = {kl_divergence}')
-            loss = F.binary_cross_entropy(out, imgs, reduction='sum') + kl_divergence
+            loss = F.mse_loss(out, imgs, reduction='sum') + kl_divergence
             print(f'loss = {loss}\n')
 
             # Backpropagation based on the loss

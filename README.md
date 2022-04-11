@@ -1,5 +1,4 @@
-# ATML_BetaVAE
-Reproducibility Report for Beta-VAE
+# Reproducibility Report for Beta-VAE
 
 This repository provides the source code for the Reproducibility Report for Beta-VAE.
 

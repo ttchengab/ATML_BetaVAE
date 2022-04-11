@@ -1,6 +1,5 @@
 # ATML_BetaVAE
 Reproducibility Report for Beta-VAE
-# Pose Adaptive Dual Mixup for Few-Shot Single-View 3D Reconstruction
 
 This repository provides the source code for the Reproducibility Report for Beta-VAE.
 

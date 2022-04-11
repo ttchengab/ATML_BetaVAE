@@ -5,7 +5,7 @@ This repository provides the source code for the Reproducibility Report for Beta
 
 ## Self-Implementation and other's implementations
 
-The beta-VAEs and conventional VAEsare self-implemented architectures. This includes the beta-VAEs under multiple datasets (dSprite, MNIST, FashionMNIST, 3DChairs) along with their designated dataloaders. 
+The beta-VAEs and conventional VAEs are self-implemented architectures. This includes the beta-VAEs under multiple datasets (dSprite, MNIST, FashionMNIST, 3DChairs) along with their designated dataloaders. 
 
 DC-IGN is also self-implemented as there exists no PyTorch implementations.
 

@@ -11,7 +11,7 @@ DC-IGN is also self-implemented as there exists no PyTorch implementations.
 
 InfoGAN is derived from the official implementation [here](https://github.com/Natsu6767/InfoGAN-PyTorch), and then trained by ourselves to obtain the results in the reproducibility paper.
 
-Several Metrics are derived from the Disentanglement Metric Library [here](link) and then further changed by us to perform the evaluation.
+Several Metrics are derived from the Disentanglement Metric Library [here](https://github.com/google-research/disentanglement_lib) and then further changed by us to perform the evaluation.
 
 
 
